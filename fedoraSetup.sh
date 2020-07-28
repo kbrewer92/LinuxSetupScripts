@@ -7,6 +7,7 @@ wget https://download.jetbrains.com/python/pycharm-professional-2020.1.3.tar.gz
 wget https://download.jetbrains.com/datagrip/datagrip-2020.1.5.tar.gz
 wget https://download.jetbrains.com/webide/PhpStorm-2020.1.3.tar.gz
 wget https://download.jetbrains.com/webstorm/WebStorm-2020.1.3.tar.gz
+wget https://download.jetbrains.com/go/goland-2020.1.4.tar.gz
 wget https://release.gitkraken.com/linux/gitkraken-amd64.rpm
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
@@ -14,6 +15,7 @@ sudo tar xzf pycharm-*.tar.gz -C /opt/
 sudo tar xzf datagrip-*.tar.gz -C /opt/
 sudo tar xzf PhpStorm-*.tar.gz -C /opt/
 sudo tar xzf WebStorm-*.tar.gz -C /opt/
+sudo tar xzf goland-*.tar.gz -C /opt/
 sudo dnf install go -y
 sudo rpm -i gitkraken*.rpm -y
 sudo yum install liberation-fonts -y
