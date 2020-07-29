@@ -10,12 +10,15 @@ wget https://download.jetbrains.com/webstorm/WebStorm-2020.1.3.tar.gz
 wget https://download.jetbrains.com/go/goland-2020.1.4.tar.gz
 wget https://release.gitkraken.com/linux/gitkraken-amd64.rpm
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+wget https://dl.discordapp.net/apps/linux/0.0.10/discord-0.0.10.tar.gz
+
 
 sudo tar xzf pycharm-*.tar.gz -C /opt/
 sudo tar xzf datagrip-*.tar.gz -C /opt/
 sudo tar xzf PhpStorm-*.tar.gz -C /opt/
 sudo tar xzf WebStorm-*.tar.gz -C /opt/
 sudo tar xzf goland-*.tar.gz -C /opt/
+sudo tar xzf discord-*.tar.gz -C /opt/
 sudo dnf install go -y
 sudo rpm -i gitkraken*.rpm -y
 sudo yum install liberation-fonts -y
