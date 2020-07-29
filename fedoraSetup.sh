@@ -1,5 +1,7 @@
 #! /bin/bash
 
+sudo yum update -y
+
 mkdir scriptDownloads
 cd scriptDownloads
 
@@ -10,7 +12,6 @@ wget https://download.jetbrains.com/webstorm/WebStorm-2020.1.3.tar.gz
 wget https://download.jetbrains.com/go/goland-2020.1.4.tar.gz
 wget https://release.gitkraken.com/linux/gitkraken-amd64.rpm
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-wget https://dl.discordapp.net/apps/linux/0.0.10/discord-0.0.10.tar.gz
 
 
 sudo tar xzf pycharm-*.tar.gz -C /opt/
@@ -27,5 +28,7 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 sudo dnf check-update
 sudo dnf install code -y
-cd /opt/Discord
-./Discord
+sudo dnf install snapd -y
+snap install discord
+sudo yum update -y
+sudo reboot
